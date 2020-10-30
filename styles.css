@@ -1,13 +1,12 @@
-img {
+.thumbnail {
   margin-top: 4px;
+  margin-right: 4px;
   vertical-align: middle;
   width:33%;
   height:auto;
   cursor: pointer;
   /*transition: 0.3s; */
 }
-
-/* #myImg:hover {opacity: 0.7;} */
 
 /* The Modal (background) */
 .modal {
@@ -28,8 +27,15 @@ img {
 .modal-content {
   margin: auto;
   display: block;
-  width: 100%;
-  max-width: 1000px;
+  width: 90%;
+  max-width: 2000px;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
@@ -44,17 +50,6 @@ img {
   height: 150px;
 }
 
-/* Add Animation - Zoom in the Modal */
-/* .modal-content, #caption {
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
-} */
-
 /* The Close Button */
 .close {
   position: absolute;
@@ -66,12 +61,6 @@ img {
   transition: 0.3s;
 }
 
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
 
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
