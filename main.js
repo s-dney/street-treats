@@ -4,6 +4,7 @@ for (let i = 1; i <= num; i++) {
   img = document.createElement('img');
   img.src = `photos/thumbnails/${i}.jpg`
   img.className = "thumbnail"
+  img.onerror = 'this.style.display = "none"'
   document.body.append(img)
 }
 
@@ -24,8 +25,6 @@ imgArray.forEach(function(img) {
   modalImg.src = `photos/${fileName}`;
   captionText.innerHTML = img.alt;
   }
-
-  img.onerror = 'this.style.display = "none"'
 
   window.onclick = function(event) {
     if (event.target == modal) {
