@@ -1,4 +1,4 @@
-let num = 64;
+let num = 100;
 
 for (let i = 1; i <= num; i++) {
   img = document.createElement('img');
