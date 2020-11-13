@@ -25,6 +25,8 @@ imgArray.forEach(function(img) {
   captionText.innerHTML = img.alt;
   }
 
+  img.onerror = 'this.style.display = "none"'
+
   window.onclick = function(event) {
     if (event.target == modal) {
       modal.style.display = "none";
